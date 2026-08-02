@@ -312,3 +312,219 @@ Name: count, dtype: int64
 2026-08-02 14:49:47 | INFO | M05 | Dataset: penguins   Target: species (classification)
 2026-08-02 14:49:47 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
 2026-08-02 14:49:47 | INFO | M05 | ========================
+2026-08-02 15:36:50 | INFO | M05 | === RUN START ===
+2026-08-02 15:36:50 | INFO | M05 | project=M05
+2026-08-02 15:36:50 | INFO | M05 | repo_dir=ml-05-ensembles
+2026-08-02 15:36:50 | INFO | M05 | python=3.14.5
+2026-08-02 15:36:50 | INFO | M05 | os=Darwin 20.6.0
+2026-08-02 15:36:50 | INFO | M05 | shell=zsh
+2026-08-02 15:36:50 | INFO | M05 | cwd=notebooks
+2026-08-02 15:36:50 | INFO | M05 | github_actions=False
+2026-08-02 15:36:50 | INFO | M05 | Confirming installation:
+2026-08-02 15:36:50 | INFO | M05 |   python:       3.14.5
+2026-08-02 15:36:50 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 15:36:50 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 15:36:50 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 15:36:50 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 15:36:50 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 15:59:09 | INFO | M05 | Loading dataset: Medical Cost Prediction
+2026-08-02 15:59:09 | INFO | M05 | Loaded: 5000 rows (instances), 20 columns
+2026-08-02 15:59:09 | INFO | M05 | Original rows: 5000
+2026-08-02 15:59:09 | INFO | M05 | Model rows:    5000
+2026-08-02 16:08:08 | INFO | M05 | Train instances: 4000
+2026-08-02 16:08:08 | INFO | M05 | Test instances: 1000
+2026-08-02 16:11:23 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 16:11:23 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 16:11:26 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 16:11:26 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 16:17:44 | INFO | M05 | single_tree: MAE=$5,415.55, RMSE=$7,173.73, R2=-0.055
+2026-08-02 16:17:44 | INFO | M05 | random_forest: MAE=$5,710.26, RMSE=$7,406.34, R2=-0.125
+2026-08-02 16:17:44 | INFO | M05 | gradient_boosting: MAE=$5,335.51, RMSE=$7,021.05, R2=-0.011
+2026-08-02 16:18:12 | INFO | M05 | single_tree: MAE=$5,415.55, RMSE=$7,173.73, R2=-0.055
+2026-08-02 16:18:12 | INFO | M05 | random_forest: MAE=$5,710.26, RMSE=$7,406.34, R2=-0.125
+2026-08-02 16:18:12 | INFO | M05 | gradient_boosting: MAE=$5,335.51, RMSE=$7,021.05, R2=-0.011
+2026-08-02 16:18:12 | INFO | M05 | Best model: gradient_boosting with R2 = -0.011
+2026-08-02 16:20:48 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 16:20:48 | INFO | M05 |   previous_year_cost   0.425
+2026-08-02 16:20:48 | INFO | M05 |   bmi                  0.327
+2026-08-02 16:20:48 | INFO | M05 |   age                  0.247
+2026-08-02 16:20:56 | INFO | M05 | ========================
+2026-08-02 16:20:56 | INFO | M05 | SUMMARY
+2026-08-02 16:20:56 | INFO | M05 | ========================
+2026-08-02 16:20:56 | INFO | M05 | Dataset: Medical Cost Prediction   Target: annual_medical_cost (classification)
+2026-08-02 16:20:56 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 16:20:56 | INFO | M05 | ========================
+2026-08-02 16:20:59 | INFO | M05 | ========================
+2026-08-02 16:20:59 | INFO | M05 | SUMMARY
+2026-08-02 16:20:59 | INFO | M05 | ========================
+2026-08-02 16:20:59 | INFO | M05 | Dataset: Medical Cost Prediction   Target: annual_medical_cost (classification)
+2026-08-02 16:20:59 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 16:20:59 | INFO | M05 | ========================
+2026-08-02 16:23:17 | INFO | M05 | === RUN START ===
+2026-08-02 16:23:17 | INFO | M05 | project=M05
+2026-08-02 16:23:17 | INFO | M05 | repo_dir=ml-05-ensembles
+2026-08-02 16:23:17 | INFO | M05 | python=3.14.5
+2026-08-02 16:23:17 | INFO | M05 | os=Darwin 20.6.0
+2026-08-02 16:23:17 | INFO | M05 | shell=zsh
+2026-08-02 16:23:17 | INFO | M05 | cwd=notebooks
+2026-08-02 16:23:17 | INFO | M05 | github_actions=False
+2026-08-02 16:23:17 | INFO | M05 | Confirming installation:
+2026-08-02 16:23:17 | INFO | M05 |   python:       3.14.5
+2026-08-02 16:23:17 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 16:23:17 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 16:23:17 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 16:23:17 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 16:23:17 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 16:23:20 | INFO | M05 | Loading dataset: Medical Cost Prediction
+2026-08-02 16:23:20 | INFO | M05 | Loaded: 5000 rows (instances), 20 columns
+2026-08-02 16:23:20 | INFO | M05 | Original rows: 5000
+2026-08-02 16:23:20 | INFO | M05 | Model rows:    5000
+2026-08-02 16:23:25 | INFO | M05 | Train instances: 4000
+2026-08-02 16:23:25 | INFO | M05 | Test instances: 1000
+2026-08-02 16:23:30 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 16:23:30 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 16:23:33 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 16:23:33 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 16:23:39 | INFO | M05 | single_tree: MAE=$5,139.61, RMSE=$6,779.77, R2=0.058
+2026-08-02 16:23:39 | INFO | M05 | random_forest: MAE=$5,266.71, RMSE=$6,817.12, R2=0.047
+2026-08-02 16:23:39 | INFO | M05 | gradient_boosting: MAE=$5,031.15, RMSE=$6,616.95, R2=0.102
+2026-08-02 16:23:39 | INFO | M05 | Best model: gradient_boosting with R2 = 0.102
+2026-08-02 16:23:53 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 16:23:53 | INFO | M05 |   previous_year_cost   0.255
+2026-08-02 16:23:53 | INFO | M05 |   bmi                  0.217
+2026-08-02 16:23:53 | INFO | M05 |   age                  0.191
+2026-08-02 16:23:53 | INFO | M05 |   hospital_admissions  0.140
+2026-08-02 16:23:53 | INFO | M05 |   doctor_visits_per_year 0.105
+2026-08-02 16:23:53 | INFO | M05 |   medication_count     0.092
+2026-08-02 16:26:58 | INFO | M05 | ========================
+2026-08-02 16:26:58 | INFO | M05 | SUMMARY
+2026-08-02 16:26:58 | INFO | M05 | ========================
+2026-08-02 16:26:58 | INFO | M05 | Dataset: Medical Cost Prediction   Target: annual_medical_cost (classification)
+2026-08-02 16:26:58 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 16:26:58 | INFO | M05 | ========================
+2026-08-02 16:31:16 | INFO | M05 | === RUN START ===
+2026-08-02 16:31:16 | INFO | M05 | project=M05
+2026-08-02 16:31:16 | INFO | M05 | repo_dir=ml-05-ensembles
+2026-08-02 16:31:16 | INFO | M05 | python=3.14.5
+2026-08-02 16:31:16 | INFO | M05 | os=Darwin 20.6.0
+2026-08-02 16:31:16 | INFO | M05 | shell=zsh
+2026-08-02 16:31:16 | INFO | M05 | cwd=notebooks
+2026-08-02 16:31:16 | INFO | M05 | github_actions=False
+2026-08-02 16:31:16 | INFO | M05 | Confirming installation:
+2026-08-02 16:31:16 | INFO | M05 |   python:       3.14.5
+2026-08-02 16:31:16 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 16:31:16 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 16:31:16 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 16:31:16 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 16:31:16 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 16:31:16 | INFO | M05 | Loading dataset: Medical Cost Prediction
+2026-08-02 16:31:16 | INFO | M05 | Loaded: 5000 rows (instances), 20 columns
+2026-08-02 16:31:16 | INFO | M05 | Original rows: 5000
+2026-08-02 16:31:16 | INFO | M05 | Model rows:    5000
+2026-08-02 16:31:16 | INFO | M05 | Train instances: 4000
+2026-08-02 16:31:16 | INFO | M05 | Test instances: 1000
+2026-08-02 16:31:16 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 16:31:16 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 16:31:20 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 16:31:20 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 16:31:20 | INFO | M05 | single_tree: MAE=$5,139.61, RMSE=$6,779.77, R2=0.058
+2026-08-02 16:31:20 | INFO | M05 | random_forest: MAE=$5,266.71, RMSE=$6,817.12, R2=0.047
+2026-08-02 16:31:20 | INFO | M05 | gradient_boosting: MAE=$5,031.15, RMSE=$6,616.95, R2=0.102
+2026-08-02 16:31:20 | INFO | M05 | Best model: gradient_boosting with R2 = 0.102
+2026-08-02 16:31:21 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 16:31:21 | INFO | M05 |   previous_year_cost   0.255
+2026-08-02 16:31:21 | INFO | M05 |   bmi                  0.217
+2026-08-02 16:31:21 | INFO | M05 |   age                  0.191
+2026-08-02 16:31:21 | INFO | M05 |   hospital_admissions  0.140
+2026-08-02 16:31:21 | INFO | M05 |   doctor_visits_per_year 0.105
+2026-08-02 16:31:21 | INFO | M05 |   medication_count     0.092
+2026-08-02 16:31:21 | INFO | M05 | ========================
+2026-08-02 16:31:21 | INFO | M05 | SUMMARY
+2026-08-02 16:31:21 | INFO | M05 | ========================
+2026-08-02 16:31:21 | INFO | M05 | Dataset: Medical Cost Prediction   Target: annual_medical_cost (classification)
+2026-08-02 16:31:21 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 16:31:21 | INFO | M05 | ========================
+2026-08-02 16:39:58 | INFO | M05 | === RUN START ===
+2026-08-02 16:39:58 | INFO | M05 | project=M05
+2026-08-02 16:39:58 | INFO | M05 | repo_dir=ml-05-ensembles
+2026-08-02 16:39:58 | INFO | M05 | python=3.14.5
+2026-08-02 16:39:58 | INFO | M05 | os=Darwin 20.6.0
+2026-08-02 16:39:58 | INFO | M05 | shell=zsh
+2026-08-02 16:39:58 | INFO | M05 | cwd=notebooks
+2026-08-02 16:39:58 | INFO | M05 | github_actions=False
+2026-08-02 16:39:58 | INFO | M05 | Confirming installation:
+2026-08-02 16:39:58 | INFO | M05 |   python:       3.14.5
+2026-08-02 16:39:58 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 16:39:58 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 16:39:58 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 16:39:58 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 16:39:58 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 16:39:58 | INFO | M05 | Loading dataset: Medical Cost Prediction
+2026-08-02 16:39:58 | INFO | M05 | Loaded: 5000 rows (instances), 20 columns
+2026-08-02 16:39:58 | INFO | M05 | Original rows: 5000
+2026-08-02 16:39:58 | INFO | M05 | Model rows:    5000
+2026-08-02 16:39:58 | INFO | M05 | Train instances: 4000
+2026-08-02 16:39:58 | INFO | M05 | Test instances: 1000
+2026-08-02 16:39:58 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 16:39:58 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 16:40:03 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 16:40:04 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 16:40:04 | INFO | M05 | single_tree: MAE=$5,139.61, RMSE=$6,779.77, R2=0.058
+2026-08-02 16:40:04 | INFO | M05 | random_forest: MAE=$5,266.71, RMSE=$6,817.12, R2=0.047
+2026-08-02 16:40:04 | INFO | M05 | gradient_boosting: MAE=$5,031.15, RMSE=$6,616.95, R2=0.102
+2026-08-02 16:40:04 | INFO | M05 | Best model: gradient_boosting with R2 = 0.102
+2026-08-02 16:40:04 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 16:40:04 | INFO | M05 |   previous_year_cost   0.255
+2026-08-02 16:40:04 | INFO | M05 |   bmi                  0.217
+2026-08-02 16:40:04 | INFO | M05 |   age                  0.191
+2026-08-02 16:40:04 | INFO | M05 |   hospital_admissions  0.140
+2026-08-02 16:40:04 | INFO | M05 |   doctor_visits_per_year 0.105
+2026-08-02 16:40:04 | INFO | M05 |   medication_count     0.092
+2026-08-02 16:40:05 | INFO | M05 | ========================
+2026-08-02 16:40:05 | INFO | M05 | SUMMARY
+2026-08-02 16:40:05 | INFO | M05 | ========================
+2026-08-02 16:40:05 | INFO | M05 | Dataset: Medical Cost Prediction   Target: annual_medical_cost (regression)
+2026-08-02 16:40:05 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 16:40:05 | INFO | M05 | ========================
+2026-08-02 16:48:19 | INFO | M05 | === RUN START ===
+2026-08-02 16:48:19 | INFO | M05 | project=M05
+2026-08-02 16:48:19 | INFO | M05 | repo_dir=ml-05-ensembles
+2026-08-02 16:48:19 | INFO | M05 | python=3.14.5
+2026-08-02 16:48:19 | INFO | M05 | os=Darwin 20.6.0
+2026-08-02 16:48:19 | INFO | M05 | shell=zsh
+2026-08-02 16:48:19 | INFO | M05 | cwd=notebooks
+2026-08-02 16:48:19 | INFO | M05 | github_actions=False
+2026-08-02 16:48:19 | INFO | M05 | Confirming installation:
+2026-08-02 16:48:19 | INFO | M05 |   python:       3.14.5
+2026-08-02 16:48:19 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 16:48:19 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 16:48:19 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 16:48:19 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 16:48:19 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 16:48:19 | INFO | M05 | Loading dataset: Medical Cost Prediction
+2026-08-02 16:48:19 | INFO | M05 | Loaded: 5000 rows (instances), 20 columns
+2026-08-02 16:48:19 | INFO | M05 | Original rows: 5000
+2026-08-02 16:48:19 | INFO | M05 | Model rows:    5000
+2026-08-02 16:48:19 | INFO | M05 | Train instances: 4000
+2026-08-02 16:48:19 | INFO | M05 | Test instances: 1000
+2026-08-02 16:48:19 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 16:48:19 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 16:48:22 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 16:48:22 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 16:48:23 | INFO | M05 | single_tree: MAE=$5,139.61, RMSE=$6,779.77, R2=0.058
+2026-08-02 16:48:23 | INFO | M05 | random_forest: MAE=$5,266.71, RMSE=$6,817.12, R2=0.047
+2026-08-02 16:48:23 | INFO | M05 | gradient_boosting: MAE=$5,031.15, RMSE=$6,616.95, R2=0.102
+2026-08-02 16:48:23 | INFO | M05 | Best model: gradient_boosting with R2 = 0.102
+2026-08-02 16:48:23 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 16:48:23 | INFO | M05 |   previous_year_cost   0.255
+2026-08-02 16:48:23 | INFO | M05 |   bmi                  0.217
+2026-08-02 16:48:23 | INFO | M05 |   age                  0.191
+2026-08-02 16:48:23 | INFO | M05 |   hospital_admissions  0.140
+2026-08-02 16:48:23 | INFO | M05 |   doctor_visits_per_year 0.105
+2026-08-02 16:48:23 | INFO | M05 |   medication_count     0.092
+2026-08-02 16:48:24 | INFO | M05 | ========================
+2026-08-02 16:48:24 | INFO | M05 | SUMMARY
+2026-08-02 16:48:24 | INFO | M05 | ========================
+2026-08-02 16:48:24 | INFO | M05 | Dataset: Medical Cost Prediction   Target: annual_medical_cost (regression)
+2026-08-02 16:48:24 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 16:48:24 | INFO | M05 | ========================
