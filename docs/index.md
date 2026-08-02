@@ -21,19 +21,12 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
-
-Include:
-
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
-
-Compared with the example project,
-explain what is different and why the change matters.
-
-Was it easy, or surprisingly challenging and why do you think so?
+For Phase 4, I decided to make an easy modification and change the Decision Tree's `max_depth`
+from 3 to 5. This change was made to see if allowing the model to make more decision splits
+would improve its classification performance. The test accuracy changed from 0.986
+in the example model to 1.0 in Phase 4, which means making the Decision Tree more complex
+gave it more flexibility to identify patterns in the Penguins Dataset. This matters because a
+tree that is too shallow may underfit the data, while a tree that is too deep may overfit the data.
 
 ## Phase 5. Custom Project
 
