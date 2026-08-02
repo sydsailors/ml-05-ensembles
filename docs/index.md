@@ -58,7 +58,7 @@ can affect medical expenses that are not represented in this dataset.
 ### Modeling Approach
 
 This project is a supervised machine learning regression problem because the chosen
-target is numerical. This model uses `previous_year_cost`, `age`, `bmi`,
+target is numerical. These models use `previous_year_cost`, `age`, `bmi`,
 `doctor_visits_per_year`, `hospital_admissions`, and `medication_count` as predictor
 variables to predict a patient's annual medical costs.
 
@@ -76,7 +76,7 @@ The target variable, `annual_medical_cost`, represents a patient's annual medica
 in dollars. This changed the model from classification to regression.
 
 The evaluation metrics were also changed in this model. Instead of classification accuracy,
-I evaluated the model using `Mean Absolute Error (MAE)`,`Root Mean Squared Error (RMSE)`,
+I evaluated the models using `Mean Absolute Error (MAE)`,`Root Mean Squared Error (RMSE)`,
 and `R²`.
 
 ### Features
@@ -96,7 +96,7 @@ about annual medical expenses.
 I evaluated all three models using the same held-out test set. This allowed me to evaluate and compare
 their performance fairly.
 
-The evaluation metrics were as followed:
+The evaluation metrics were as follows:
 
 - `MAE`: measures the average absolute difference between predicted and actual medical costs (lower values are better)
 - `RMSE`: measures prediction error while giving greater weight to larger errors (lower values are better)
@@ -107,13 +107,13 @@ The results were:
 | Model                       | MAE       | RMSE      | R²    |
 | --------------------------- | --------- | --------- | ----- |
 | Single-Tree Regressor       | $5,139.61 | $6,779.77 | 0.058 |
-| Random-Forest Regressor     | $5,266.71 | $6,817.12 | 0.047 |
-| Gradient-Boosting Regressor | $5,031.15 | $6,616.95 | 0.102 |
+| Random Forest Regressor     | $5,266.71 | $6,817.12 | 0.047 |
+| Gradient Boosting Regressor | $5,031.15 | $6,616.95 | 0.102 |
 
-![Single Model vs Ensembes](../data/raw/image.png)
+![Single Model vs Ensembles](../data/raw/image.png)
 
-The best performing model was Gradient-Boosting Regressor based on all three metrics.
-It had the lowest `MAE`, the lowest `RMSE`, and the highest `R²`. This means the Gradient-Boosting
+The best-performing model was Gradient Boosting Regressor based on all three metrics.
+It had the lowest `MAE`, the lowest `RMSE`, and the highest `R²`. This means the Gradient Boosting
 model's predictions were off by approximately $5,031 and explained about 10.2% of the variation in annual medical costs.
 
 It was interesting to see that the Random Forest did not improve on a single Decision Tree. It demonstrated
@@ -123,12 +123,12 @@ An additional improvement would be to include additional predictors such as chro
 
 ### Summary
 
-For this project, I customized the original example by importing a Kaggle dataset on medical cost. The features
+For this project, I customized the original example by importing a Kaggle dataset on medical costs. The features
 `previous_year_cost`, `age`, `bmi`, `doctor_visits_per_year`, `hospital_admissions`,
-and `medication_count` were used to predict `annual_medical_cost`. A Decision-Tree Regressor was
+and `medication_count` were used to predict `annual_medical_cost`. A Decision Tree Regressor was
 implemented as a baseline and compared with two ensemble methods: Random Forest Regressor and Gradient
 Boosting Regressor. All three models were trained and tested on the same held-out test data using `MAE`,
-`RMSE`, and `R²`. Gradient Boosting Regressor was the best performing model with an `MAE` of $5,031.15,
+`RMSE`, and `R²`. Gradient Boosting Regressor was the best-performing model with an `MAE` of $5,031.15,
 an `RMSE` of $6,616.95, and an `R²` of 0.102. This project helped me understand how ensemble methods
 can be applied to regression problems and how model performance should be evaluated using multiple metrics.
 I also learned that feature selection has an important effect on model performance. These skills could be applied to real-world problems such as hospital resource utilization,
